@@ -53,6 +53,18 @@
       <DependentUpon>AddMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin.cs" />
+    <Compile Include="AdminDisplayMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDisplayMovie.Designer.cs">
+      <DependentUpon>AdminDisplayMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDisplayTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDisplayTicket.Designer.cs">
+      <DependentUpon>AdminDisplayTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +78,12 @@
       <DependentUpon>Authentication.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs" />
+    <Compile Include="CustomerDisplayMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDisplayMovie.Designer.cs">
+      <DependentUpon>CustomerDisplayMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerDisplayTicket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,15 +99,30 @@
     <Compile Include="Movies.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AddMovie.resx">
       <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDisplayMovie.resx">
+      <DependentUpon>AdminDisplayMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDisplayTicket.resx">
+      <DependentUpon>AdminDisplayTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Authentication.resx">
       <DependentUpon>Authentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDisplayMovie.resx">
+      <DependentUpon>CustomerDisplayMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerDisplayTicket.resx">
       <DependentUpon>CustomerDisplayTicket.cs</DependentUpon>
@@ -106,6 +139,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

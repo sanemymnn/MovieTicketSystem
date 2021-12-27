@@ -56,7 +56,7 @@ namespace MovieTicketSystem
 
         private void Register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Register fm4 = new Register();
+            registerPicture fm4 = new registerPicture();
             fm4.Show();
             this.Hide();
         }
