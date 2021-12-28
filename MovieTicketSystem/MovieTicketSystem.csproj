@@ -52,6 +52,12 @@
     <Compile Include="AddMovie.Designer.cs">
       <DependentUpon>AddMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTicket.Designer.cs">
+      <DependentUpon>AddTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin.cs" />
     <Compile Include="AdminDisplayMovie.cs">
       <SubType>Form</SubType>
@@ -105,9 +111,13 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tickets.cs" />
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AddMovie.resx">
       <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTicket.resx">
+      <DependentUpon>AddTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminDisplayMovie.resx">
       <DependentUpon>AdminDisplayMovie.cs</DependentUpon>
