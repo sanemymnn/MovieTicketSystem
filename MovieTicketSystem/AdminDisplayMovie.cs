@@ -37,7 +37,7 @@ namespace MovieTicketSystem
         }
 
         // Displays all the movies from ("Movies.txt") file
-        private void AdminDisplayMovie_Load(object sender, EventArgs e)
+        private void adminDisplayMovie_Load(object sender, EventArgs e)
         {
             DataGridViewButtonColumn buttonColumn2 = new DataGridViewButtonColumn();
             buttonColumn2.HeaderText = "Remove Movie";
@@ -50,8 +50,8 @@ namespace MovieTicketSystem
             dt.Columns.Add("Start Time", typeof(string));
             dt.Columns.Add("Place", typeof(string));
 
-             // dt.Columns.Add("Movie Capacity", typeof(string));
-             //  dt.Columns.Add("Movie Status", typeof(string));
+            dt.Columns.Add("Movie Capacity", typeof(string));
+            dt.Columns.Add("Movie Status", typeof(string));
 
             MovieDataGridView.DataSource = dt;
 
@@ -85,6 +85,10 @@ namespace MovieTicketSystem
             bs.Filter = string.Format("[" + searchComboBox.Text + "] like '{0}%'", searchText.Text);
         }
 
+
+
+        //Button Events
+
         private void MovieDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int indexRow = e.RowIndex;
@@ -114,7 +118,7 @@ namespace MovieTicketSystem
             }
 
             // Opens admin ticket form to show all ticket infos which belongs to chosen movie id
-            if (e.ColumnIndex == 5)
+            if (e.ColumnIndex == 9)
             {
 
                 var valueIndex = string.Format("{0}", MovieDataGridView.Rows[indexRow].Cells[1].Value);
@@ -151,6 +155,29 @@ namespace MovieTicketSystem
                 frm5.Show();
                 this.Hide();
             }
+        }
+        // Filter movies according to their status
+        private void filterComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            bs.DataSource = dt.DefaultView;
+            if (filterComboBox.Text == "All")
+            {
+                bs.Filter = "";
+
+            }
+
+            else if (filterComboBox.Text == "Available")
+            {
+                bs.Filter = string.Format("[Movie Status] LIKE 'Available'");
+
+            }
+
+            else if (filterComboBox.Text == "Non-available")
+            {
+                bs.Filter = string.Format("[Movie Status] LIKE 'Non-available'");
+
+            }
+
         }
     }
 }

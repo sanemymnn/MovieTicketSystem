@@ -126,6 +126,7 @@ namespace MovieTicketSystem
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CustomerDisplayMovie";
             this.Text = "CustomerDisplayMovie";
+            this.Load += new System.EventHandler(this.DisplayMovie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.displayMovieDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

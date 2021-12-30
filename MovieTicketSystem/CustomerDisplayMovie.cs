@@ -17,6 +17,7 @@ namespace MovieTicketSystem
         DataTable dt = new DataTable();
         DataTable dt2 = new DataTable();
         BindingSource bs = new BindingSource();
+        
         public CustomerDisplayMovie()
         {
             InitializeComponent();
@@ -126,6 +127,7 @@ namespace MovieTicketSystem
         private void filterComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             bs.DataSource = dt.DefaultView;
+            if (filterComboBox.Text == "All")
             if (filterComboBox.Text == "All")
             {
                 bs.Filter = "";

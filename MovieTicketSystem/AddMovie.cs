@@ -19,19 +19,20 @@ namespace MovieTicketSystem
             InitializeComponent();
         }
 
+        // Adds a new movie to the ("Movies.txt") file
         private void addMovieButton_Click(object sender, EventArgs e)
         {
-            if (idText.Text.Equals("") || nameText.Text.Equals("") || startTimeText.Text.Equals("") || movieTheaterText.Text.Equals("") )
+            if (idText.Text.Equals("") || nameText.Text.Equals("") || startTimeText.Text.Equals("") || movieTheaterText.Text.Equals("") || capacityText.Text.Equals("") || statusComboBox.SelectedIndex == -1)
             {
                 MessageBox.Show("Please fill out all fields");
             }
 
             else
             {
-                Movies movie = new Movies(idText.Text, nameText.Text, startTimeText.Text, movieTheaterText.Text);
+                Movies movie = new Movies(idText.Text, nameText.Text, startTimeText.Text, movieTheaterText.Text, capacityText.Text, statusComboBox.Text);
                 movies.Add(movie);
 
-                var newTour = "\r" + movie.ToString();
+                var newMovie = "\r" + movie.ToString();
                 var path = "D:\\Movies.txt";
 
                 if (File.ReadLines(path).Any(line => line.Contains(idText.Text)))
@@ -41,13 +42,15 @@ namespace MovieTicketSystem
 
                 else
                 {
-                    File.AppendAllText(path, newTour);
+                    File.AppendAllText(path, newMovie);
                 }
 
                 idText.Clear();
                 nameText.Clear();
                 startTimeText.Clear();
                 movieTheaterText.Clear();
+                capacityText.Clear();
+                statusComboBox.SelectedIndex = -1;
               
             }
         }
