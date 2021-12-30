@@ -25,7 +25,7 @@ namespace MovieTicketSystem
 
 
         //Parameterized Constructor
-        public Movies(string id, string name, string startDate, string movieTheater)
+        public Movies(string id, string name, string startTime, string movieTheater)
         {
             Name = name;
 
@@ -64,7 +64,7 @@ namespace MovieTicketSystem
             try
             {
                 // Check if start date is null
-                if (string.IsNullOrEmpty(startDate))
+                if (string.IsNullOrEmpty(startTime))
                 {
                     throw new Exception("Start time cannot be null");
                 }

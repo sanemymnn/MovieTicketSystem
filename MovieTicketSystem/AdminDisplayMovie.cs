@@ -41,12 +41,12 @@ namespace MovieTicketSystem
 
             dt.Columns.Add("ID", typeof(string));
             dt.Columns.Add("Name", typeof(string));
-            dt.Columns.Add("Start Date", typeof(string));
-            dt.Columns.Add("Finish Date", typeof(string));
-            dt.Columns.Add("Destination Place", typeof(string));
-            dt.Columns.Add("Departure Place", typeof(string));
-            dt.Columns.Add("Movie Capacity", typeof(string));
-            dt.Columns.Add("Movie Status", typeof(string));
+            dt.Columns.Add("Start Time", typeof(string));
+
+            dt.Columns.Add("Place", typeof(string));
+
+        //    dt.Columns.Add("Movie Capacity", typeof(string));
+          //  dt.Columns.Add("Movie Status", typeof(string));
 
             MovieDataGridView.DataSource = dt;
 

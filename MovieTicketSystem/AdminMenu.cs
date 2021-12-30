@@ -38,5 +38,12 @@ namespace MovieTicketSystem
             this.Hide();
 
         }
+
+        private void DispSearchFilterButton_Click(object sender, EventArgs e)
+        {
+            AdminDisplayMovie fm1 = new AdminDisplayMovie();
+            fm1.Show();
+            this.Hide();
+        }
     }
 }

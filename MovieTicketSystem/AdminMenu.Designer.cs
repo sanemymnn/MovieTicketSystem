@@ -32,6 +32,7 @@ namespace MovieTicketSystem
             this.addMovieButton = new System.Windows.Forms.Button();
             this.addTicketButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.DispSearchFilterButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addMovieButton
@@ -68,12 +69,23 @@ namespace MovieTicketSystem
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
+            // DispSearchFilterButton
+            // 
+            this.DispSearchFilterButton.Location = new System.Drawing.Point(357, 288);
+            this.DispSearchFilterButton.Name = "DispSearchFilterButton";
+            this.DispSearchFilterButton.Size = new System.Drawing.Size(100, 50);
+            this.DispSearchFilterButton.TabIndex = 3;
+            this.DispSearchFilterButton.Text = "Display movies and tickets";
+            this.DispSearchFilterButton.UseVisualStyleBackColor = true;
+            this.DispSearchFilterButton.Click += new System.EventHandler(this.DispSearchFilterButton_Click);
+            // 
             // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.DispSearchFilterButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.addTicketButton);
             this.Controls.Add(this.addMovieButton);
@@ -88,6 +100,7 @@ namespace MovieTicketSystem
         private System.Windows.Forms.Button addMovieButton;
         private System.Windows.Forms.Button addTicketButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button DispSearchFilterButton;
     }
 }
 

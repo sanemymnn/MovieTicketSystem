@@ -36,14 +36,13 @@ namespace MovieTicketSystem
             dt.Columns.Add("ID", typeof(string));
             dt.Columns.Add("Name", typeof(string));
             dt.Columns.Add("Start Date", typeof(string));
-            dt.Columns.Add("Finish Date", typeof(string));
             dt.Columns.Add("Movie Theater", typeof(string));
   
 
 
             displayMovieDataGridView.DataSource = dt;
 
-            string[] lines = File.ReadAllLines("D:\\Movie.txt");
+            string[] lines = File.ReadAllLines("D:\\Movies.txt");
             string[] values;
 
             for (int i = 0; i < lines.Length; i++)
