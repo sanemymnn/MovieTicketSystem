@@ -80,7 +80,7 @@ namespace MovieTicketSystem
 
         #endregion
 
-        private System.Windows.Forms.TextBox ticketAmountText;
+        public System.Windows.Forms.TextBox ticketAmountText;
         public System.Windows.Forms.DataGridView DisplayTicketDataGridView;
         private System.Windows.Forms.Button prevPageButton;
     }

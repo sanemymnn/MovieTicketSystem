@@ -119,7 +119,7 @@ namespace MovieTicketSystem
                 string[] values;
                 int amount = keepLines.Length;
                 AdminDisplayTicket frm5 = new AdminDisplayTicket();
-                frm5.TicketDataGridView = dt2;
+                frm5.TicketDataGridView.DataSource = dt2;
                 string headline = "The ticket amount: " + amount;
                 frm5.ticketInfoText.Text = headline;
 

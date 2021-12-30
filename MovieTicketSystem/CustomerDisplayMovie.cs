@@ -37,10 +37,9 @@ namespace MovieTicketSystem
             dt.Columns.Add("Name", typeof(string));
             dt.Columns.Add("Start Date", typeof(string));
             dt.Columns.Add("Finish Date", typeof(string));
-            dt.Columns.Add("Destination Place", typeof(string));
-            dt.Columns.Add("Departure Place", typeof(string));
-            dt.Columns.Add("Movie Capacity", typeof(string));
-            dt.Columns.Add("Movie Status", typeof(string));
+            dt.Columns.Add("Movie Theater", typeof(string));
+  
+
 
             displayMovieDataGridView.DataSource = dt;
 
@@ -67,46 +66,19 @@ namespace MovieTicketSystem
             displayMovieDataGridView.Columns.Add(buttonColumn);
         }
 
-        // Filters movies according to given attribute in searchComboBox
-        private void SearchText_TextChanged(object sender, EventArgs e)
-        {
-            bs.DataSource = dt.DefaultView;
-            bs.Filter = string.Format("[" + searchComboBox.Text + "] like '{0}%'", searchText.Text);
-        }
-
-        // Filter movies according to their status
-        private void FilterComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            bs.DataSource = dt.DefaultView;
-            if (filterComboBox.Text == "All")
-            {
-                bs.Filter = "";
-
-            }
-
-            else if (filterComboBox.Text == "Available")
-            {
-                bs.Filter = string.Format("[Movies Status] LIKE 'Available'");
-
-            }
-
-            else if (filterComboBox.Text == "Non-available")
-            {
-                bs.Filter = string.Format("[Movies Status] LIKE 'Non-available'");
-
-            }
-        }
+   
+     
 
         // Button events
         private void displayMovieDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Opens customer ticket form to show all ticket infos which belongs to chosen movie id
+            // Opens customer ticket form to show all ticket infos which belongs to chosen tour id
             if (e.ColumnIndex == 8)
             {
                 int numberRow = Convert.ToInt32(e.RowIndex);
                 var valueIndex = string.Format("{0}", displayMovieDataGridView.Rows[numberRow].Cells[0].Value);
 
-                string[] allLines = File.ReadAllLines("D:\\Movies.txt");
+                string[] allLines = File.ReadAllLines("D:\\Tickets.txt");
                 string[] keepLines = Array.FindAll(allLines, line => line.Contains(valueIndex));
                 string[] values;
 
@@ -117,7 +89,7 @@ namespace MovieTicketSystem
                 frm10.ticketAmountText.Text = headline;
 
                 dt2.Columns.Add("Ticket ID", typeof(string));
-                dt2.Columns.Add("Movie ID", typeof(string));
+                dt2.Columns.Add("Tour ID", typeof(string));
                 dt2.Columns.Add("Ticket Status", typeof(string));
                 dt2.Columns.Add("Ticket Price", typeof(string));
 
@@ -140,7 +112,39 @@ namespace MovieTicketSystem
                 this.Hide();
             }
         }
-       
+
+        private void searchComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchText_TextChanged(object sender, EventArgs e)
+        {
+            bs.DataSource = dt.DefaultView;
+            bs.Filter = string.Format("[" + searchComboBox.Text + "] like '{0}%'", searchText.Text);
+        }
+
+        private void filterComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            bs.DataSource = dt.DefaultView;
+            if (filterComboBox.Text == "All")
+            {
+                bs.Filter = "";
+
+            }
+
+            else if (filterComboBox.Text == "Available")
+            {
+                bs.Filter = string.Format("[Movies Status] LIKE 'Available'");
+
+            }
+
+            else if (filterComboBox.Text == "Non-available")
+            {
+                bs.Filter = string.Format("[Movies Status] LIKE 'Non-available'");
+
+            }
+        }
     }
     }
 

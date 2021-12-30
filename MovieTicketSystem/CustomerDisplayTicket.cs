@@ -17,7 +17,9 @@ namespace MovieTicketSystem
         {
             InitializeComponent();
         }
-        public void DisplayTicket_Load(object sender, EventArgs e)
+
+        // Adds BuyTicket button to the dataGridView
+        private void DisplayTicket_Load(object sender, EventArgs e)
         {
             DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
             buttonColumn.HeaderText = "Buy Ticket";
@@ -25,14 +27,17 @@ namespace MovieTicketSystem
             buttonColumn.UseColumnTextForButtonValue = true;
             DisplayTicketDataGridView.Columns.Add(buttonColumn);
         }
+
+        // Shows previous page
         private void prevPageButton_Click(object sender, EventArgs e)
         {
-            CustomerDisplayMovie frmm = new CustomerDisplayMovie();
-            frmm.Show();
+            CustomerDisplayMovie frm9 = new CustomerDisplayMovie();
+            frm9.Show();
             this.Hide();
         }
 
-       public void DisplayTicketDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        // Moves tickets from ("Tickets.txt") to ("BoughtTicket.txt")
+        private void DisplayTicketDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int indexRow = e.RowIndex;
             if (e.ColumnIndex == 4)
@@ -62,7 +67,7 @@ namespace MovieTicketSystem
             }
         }
 
-        public void ticketAmountText_TextChanged(object sender, EventArgs e)
+        private void ticketAmountText_TextChanged(object sender, EventArgs e)
         {
 
         }

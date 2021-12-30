@@ -38,7 +38,7 @@ namespace MovieTicketSystem
         }
 
         // Removes tickets from ("Tickets.txt") 
-        public void TicketDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void TicketDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int indexRow = e.RowIndex;
 

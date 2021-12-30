@@ -19,8 +19,8 @@ namespace MovieTicketSystem
         }
         public string Password
         {
-            get => username;
-            set => username = value;
+            get => password;
+            set => password = value;
         }
 
         // Non-parameterized Constructor
