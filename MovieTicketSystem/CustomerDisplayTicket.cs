@@ -17,7 +17,7 @@ namespace MovieTicketSystem
         {
             InitializeComponent();
         }
-        private void DisplayTicket_Load(object sender, EventArgs e)
+        public void DisplayTicket_Load(object sender, EventArgs e)
         {
             DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
             buttonColumn.HeaderText = "Buy Ticket";
@@ -32,7 +32,7 @@ namespace MovieTicketSystem
             this.Hide();
         }
 
-        private void DisplayTicketDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+       public void DisplayTicketDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int indexRow = e.RowIndex;
             if (e.ColumnIndex == 4)
@@ -60,6 +60,11 @@ namespace MovieTicketSystem
                     DisplayTicketDataGridView.Rows.RemoveAt(rowIndex);
                 }
             }
+        }
+
+        public void ticketAmountText_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

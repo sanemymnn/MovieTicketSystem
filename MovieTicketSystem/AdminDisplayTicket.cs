@@ -31,14 +31,14 @@ namespace MovieTicketSystem
         // Shows previous page
         private void prevPageButton_Click(object sender, EventArgs e)
         {
-            AdminDisplayTour frm1 = new AdminDisplayTour();
+            AdminDisplayMovie frm1 = new AdminDisplayMovie();
             frm1.Show();
             this.Hide();
 
         }
 
         // Removes tickets from ("Tickets.txt") 
-        private void TicketDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void TicketDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int indexRow = e.RowIndex;
 

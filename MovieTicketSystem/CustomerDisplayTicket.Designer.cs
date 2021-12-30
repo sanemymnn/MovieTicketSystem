@@ -41,6 +41,7 @@ namespace MovieTicketSystem
             this.ticketAmountText.Name = "ticketAmountText";
             this.ticketAmountText.Size = new System.Drawing.Size(148, 20);
             this.ticketAmountText.TabIndex = 0;
+            this.ticketAmountText.TextChanged += new System.EventHandler(this.ticketAmountText_TextChanged);
             // 
             // DisplayTicketDataGridView
             // 

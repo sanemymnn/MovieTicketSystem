@@ -19,14 +19,14 @@ namespace MovieTicketSystem
 
         private void PurchasedTicketsButton_Click(object sender, EventArgs e)
         {
-            PurchasedTicket frm8 = new PurchasedTicket();
+            PurchasedTickets frm8 = new PurchasedTickets();
             frm8.Show();
             this.Hide();
         }
 
         private void DisplayMovieTicketButton_Click(object sender, EventArgs e)
         {
-            CustomerDisplayTour frm9 = new CustomerDisplayTour();
+            CustomerDisplayMovie frm9 = new CustomerDisplayMovie();
             frm9.Show();
             this.Hide();
         }
