@@ -22,7 +22,13 @@ namespace MovieTicketSystem
             InitializeComponent();
         }
 
+        private void frm_menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
         // Shows previous page
+
         private void prevPageButton_Click(object sender, EventArgs e)
         {
             AdminMenu frm3 = new AdminMenu();
@@ -42,11 +48,10 @@ namespace MovieTicketSystem
             dt.Columns.Add("ID", typeof(string));
             dt.Columns.Add("Name", typeof(string));
             dt.Columns.Add("Start Time", typeof(string));
-
             dt.Columns.Add("Place", typeof(string));
 
-        //    dt.Columns.Add("Movie Capacity", typeof(string));
-          //  dt.Columns.Add("Movie Status", typeof(string));
+             // dt.Columns.Add("Movie Capacity", typeof(string));
+             //  dt.Columns.Add("Movie Status", typeof(string));
 
             MovieDataGridView.DataSource = dt;
 
@@ -109,7 +114,7 @@ namespace MovieTicketSystem
             }
 
             // Opens admin ticket form to show all ticket infos which belongs to chosen movie id
-            if (e.ColumnIndex == 9)
+            if (e.ColumnIndex == 5)
             {
 
                 var valueIndex = string.Format("{0}", MovieDataGridView.Rows[indexRow].Cells[1].Value);
