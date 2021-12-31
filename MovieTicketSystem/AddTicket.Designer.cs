@@ -101,11 +101,16 @@ namespace MovieTicketSystem
             // 
             // statusComboBox
             // 
+            this.statusComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.statusComboBox.FormattingEnabled = true;
-            this.statusComboBox.Location = new System.Drawing.Point(261, 213);
+            this.statusComboBox.Items.AddRange(new object[] {
+            "Available",
+            "Non-Available"});
+            this.statusComboBox.Location = new System.Drawing.Point(261, 210);
+            this.statusComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.statusComboBox.Name = "statusComboBox";
-            this.statusComboBox.Size = new System.Drawing.Size(121, 24);
-            this.statusComboBox.TabIndex = 6;
+            this.statusComboBox.Size = new System.Drawing.Size(110, 24);
+            this.statusComboBox.TabIndex = 12;
             // 
             // ticketIdText
             // 

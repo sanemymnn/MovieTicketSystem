@@ -32,7 +32,7 @@ namespace MovieTicketSystem
                 Movies movie = new Movies(idText.Text, nameText.Text, startTimeText.Text, movieTheaterText.Text, capacityText.Text, statusComboBox.Text);
                 movies.Add(movie);
 
-                var newMovie = "\r" + movie.ToString();
+                var newMovie = "\r" + movie.ToString() ;
                 var path = "D:\\Movies.txt";
 
                 if (File.ReadLines(path).Any(line => line.Contains(idText.Text)))

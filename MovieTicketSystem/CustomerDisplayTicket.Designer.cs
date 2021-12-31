@@ -71,7 +71,8 @@ namespace MovieTicketSystem
             this.Controls.Add(this.DisplayTicketDataGridView);
             this.Controls.Add(this.ticketAmountText);
             this.Name = "CustomerDisplayTicket";
-            this.Text = "CustomerDisplayTicket";
+            this.Text = "Ticket Info";
+            this.Load += new System.EventHandler(this.DisplayTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DisplayTicketDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

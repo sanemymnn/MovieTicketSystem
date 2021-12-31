@@ -53,7 +53,7 @@ namespace MovieTicketSystem
             this.TicketDataGridView.RowHeadersWidth = 51;
             this.TicketDataGridView.RowTemplate.Height = 24;
             this.TicketDataGridView.Size = new System.Drawing.Size(552, 202);
-            this.TicketDataGridView.TabIndex = 1;
+            this.TicketDataGridView.TabIndex = 2;
             this.TicketDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TicketDataGridView_CellContentClick);
             // 
             // ticketInfoText
@@ -72,7 +72,8 @@ namespace MovieTicketSystem
             this.Controls.Add(this.TicketDataGridView);
             this.Controls.Add(this.prevPageButton);
             this.Name = "AdminDisplayTicket";
-            this.Text = "AdminDisplayTicket";
+            this.Text = "Ticket Info";
+            this.Load += new System.EventHandler(this.TicketInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TicketDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -64,6 +64,7 @@ namespace MovieTicketSystem
                 passwordText.Clear();
                 nameText.Clear();
                 surnameText.Clear();
+                ageText.Clear();
             }
 
         }
