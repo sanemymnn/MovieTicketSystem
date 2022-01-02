@@ -83,7 +83,8 @@ namespace MovieTicketSystem
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.prevPageButton);
             this.Name = "PurchasedTickets";
-            this.Text = "PurchasedTickets";
+            this.Text = "Purchased Tickets";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.PurchasedTicketsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

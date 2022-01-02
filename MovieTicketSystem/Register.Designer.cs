@@ -173,6 +173,7 @@ namespace MovieTicketSystem
             this.Controls.Add(this.usernameLabel);
             this.Name = "registerPicture";
             this.Text = "Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

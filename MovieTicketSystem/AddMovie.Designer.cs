@@ -207,7 +207,8 @@ namespace MovieTicketSystem
             this.Controls.Add(this.id);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddMovie";
-            this.Text = "AddMovie";
+            this.Text = "Add Movie";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 

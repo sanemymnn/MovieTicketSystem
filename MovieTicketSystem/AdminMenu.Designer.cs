@@ -90,7 +90,8 @@ namespace MovieTicketSystem
             this.Controls.Add(this.addTicketButton);
             this.Controls.Add(this.addMovieButton);
             this.Name = "AdminMenu";
-            this.Text = "Form1";
+            this.Text = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
 
         }

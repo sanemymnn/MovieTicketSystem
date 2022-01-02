@@ -130,7 +130,8 @@ namespace MovieTicketSystem
             this.Controls.Add(this.login);
             this.Controls.Add(this.adminLogin);
             this.Name = "Authentication";
-            this.Text = "Authentication";
+            this.Text = "Welcome!";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -73,7 +73,8 @@ namespace MovieTicketSystem
             this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.PurchasedTicketsButton);
             this.Name = "CustomerMenu";
-            this.Text = "CustomerMenu";
+            this.Text = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
 
         }

@@ -73,6 +73,7 @@ namespace MovieTicketSystem
             this.Name = "CustomerDisplayTicket";
             this.Text = "Ticket Info";
             this.Load += new System.EventHandler(this.DisplayTicket_Load);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.DisplayTicketDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

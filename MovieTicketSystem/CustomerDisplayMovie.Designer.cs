@@ -135,6 +135,7 @@ namespace MovieTicketSystem
             this.Name = "CustomerDisplayMovie";
             this.Text = "Display/Search/Filter Movies";
             this.Load += new System.EventHandler(this.DisplayMovie_Load);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.displayMovieDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

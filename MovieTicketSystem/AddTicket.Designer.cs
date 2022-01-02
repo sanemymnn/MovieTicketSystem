@@ -159,7 +159,8 @@ namespace MovieTicketSystem
             this.Controls.Add(this.addTicketButton);
             this.Controls.Add(this.prevPageButton);
             this.Name = "AddTicket";
-            this.Text = "AddTicket";
+            this.Text = "Add Ticket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.ticketPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
