@@ -47,7 +47,7 @@ namespace MovieTicketSystem
             string[] lines = File.ReadAllLines("D:\\Movies.txt");
             string[] values;
 
-            for (int i = 0; i < lines.Length; i++)
+            for (int i = 1; i < lines.Length; i++)
             {
                 values = lines[i].ToString().Split(' ');
                 string[] row = new string[values.Length];

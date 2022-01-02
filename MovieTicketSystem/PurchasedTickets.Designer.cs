@@ -65,6 +65,7 @@ namespace MovieTicketSystem
             // 
             // PurchasedTicketsDataGridView
             // 
+            this.PurchasedTicketsDataGridView.AllowUserToAddRows = false;
             this.PurchasedTicketsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PurchasedTicketsDataGridView.Location = new System.Drawing.Point(134, 170);
             this.PurchasedTicketsDataGridView.Name = "PurchasedTicketsDataGridView";

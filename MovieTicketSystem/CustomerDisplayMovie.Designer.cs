@@ -126,7 +126,7 @@ namespace MovieTicketSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 467);
+            this.ClientSize = new System.Drawing.Size(1269, 438);
             this.Controls.Add(this.filterComboBox);
             this.Controls.Add(this.filterLabel);
             this.Controls.Add(this.searchText);
