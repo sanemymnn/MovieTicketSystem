@@ -37,9 +37,10 @@ namespace MovieTicketSystem
             // 
             // prevPageButton
             // 
-            this.prevPageButton.Location = new System.Drawing.Point(51, 35);
+            this.prevPageButton.Location = new System.Drawing.Point(76, 40);
+            this.prevPageButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.prevPageButton.Name = "prevPageButton";
-            this.prevPageButton.Size = new System.Drawing.Size(51, 36);
+            this.prevPageButton.Size = new System.Drawing.Size(29, 23);
             this.prevPageButton.TabIndex = 0;
             this.prevPageButton.Text = "<";
             this.prevPageButton.UseVisualStyleBackColor = true;
@@ -48,29 +49,32 @@ namespace MovieTicketSystem
             // TicketDataGridView
             // 
             this.TicketDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TicketDataGridView.Location = new System.Drawing.Point(105, 170);
+            this.TicketDataGridView.Location = new System.Drawing.Point(76, 153);
+            this.TicketDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TicketDataGridView.Name = "TicketDataGridView";
             this.TicketDataGridView.RowHeadersWidth = 51;
             this.TicketDataGridView.RowTemplate.Height = 24;
-            this.TicketDataGridView.Size = new System.Drawing.Size(552, 202);
+            this.TicketDataGridView.Size = new System.Drawing.Size(645, 164);
             this.TicketDataGridView.TabIndex = 2;
             this.TicketDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TicketDataGridView_CellContentClick);
             // 
             // ticketInfoText
             // 
-            this.ticketInfoText.Location = new System.Drawing.Point(424, 107);
+            this.ticketInfoText.Location = new System.Drawing.Point(318, 87);
+            this.ticketInfoText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ticketInfoText.Name = "ticketInfoText";
-            this.ticketInfoText.Size = new System.Drawing.Size(148, 22);
+            this.ticketInfoText.Size = new System.Drawing.Size(112, 20);
             this.ticketInfoText.TabIndex = 2;
             // 
             // AdminDisplayTicket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(788, 435);
             this.Controls.Add(this.ticketInfoText);
             this.Controls.Add(this.TicketDataGridView);
             this.Controls.Add(this.prevPageButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdminDisplayTicket";
             this.Text = "Ticket Info";
             this.Load += new System.EventHandler(this.TicketInfo_Load);

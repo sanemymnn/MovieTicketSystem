@@ -49,7 +49,6 @@ namespace MovieTicketSystem
             dt.Columns.Add("Name", typeof(string));
             dt.Columns.Add("Start Time", typeof(string));
             dt.Columns.Add("Place", typeof(string));
-
             dt.Columns.Add("Movie Capacity", typeof(string));
             dt.Columns.Add("Movie Status", typeof(string));
 
@@ -103,8 +102,8 @@ namespace MovieTicketSystem
                 {
                     var tempFile = Path.GetTempFileName();
                     var tempFile2 = Path.GetTempFileName();
-                    var moviesToKeep = File.ReadLines("D:\\Movies.txt").Where(l => !l.Contains(valueIndex));
-                    var ticketsToKeep = File.ReadLines("D:\\Tickets.txt").Where(l => !l.Contains(valueIndex));
+                    var moviesToKeep = File.ReadLines("D:\\Movies.txt").Where(l => !l.Contains(valueIndex)); 
+                    var ticketsToKeep = File.ReadLines("D:\\Tickets.txt").Where(l => !l.Contains(valueIndex)); 
                     File.WriteAllLines(tempFile, moviesToKeep);
                     File.WriteAllLines(tempFile2, ticketsToKeep);
                     File.Delete("D:\\Movies.txt");
@@ -118,7 +117,7 @@ namespace MovieTicketSystem
             }
 
             // Opens admin ticket form to show all ticket infos which belongs to chosen movie id
-            if (e.ColumnIndex == 9)
+            if (e.ColumnIndex == 7)
             {
 
                 var valueIndex = string.Format("{0}", MovieDataGridView.Rows[indexRow].Cells[1].Value);
