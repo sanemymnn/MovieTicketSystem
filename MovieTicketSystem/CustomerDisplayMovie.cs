@@ -42,7 +42,6 @@ namespace MovieTicketSystem
             dt.Columns.Add("Movie Status", typeof(string));
 
 
-
             displayMovieDataGridView.DataSource = dt;
 
             string[] lines = File.ReadAllLines("D:\\Movies.txt");
@@ -69,13 +68,12 @@ namespace MovieTicketSystem
         }
 
    
-     
-
+    
         // Button events
         private void displayMovieDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Opens customer ticket form to show all ticket infos which belongs to chosen tour id
-            if (e.ColumnIndex == 8)
+            // Opens customer ticket form to show all ticket infos which belongs to chosen movie id
+            if (e.ColumnIndex == 6)
             {
                 int numberRow = Convert.ToInt32(e.RowIndex);
                 var valueIndex = string.Format("{0}", displayMovieDataGridView.Rows[numberRow].Cells[0].Value);
@@ -130,7 +128,7 @@ namespace MovieTicketSystem
         {
             bs.DataSource = dt.DefaultView;
             if (filterComboBox.Text == "All")
-            if (filterComboBox.Text == "All")
+           
             {
                 bs.Filter = "";
 
@@ -138,13 +136,13 @@ namespace MovieTicketSystem
 
             else if (filterComboBox.Text == "Available")
             {
-                bs.Filter = string.Format("[Movies Status] LIKE 'Available'");
+                bs.Filter = string.Format("[Movie Status] LIKE 'Available'");
 
             }
 
             else if (filterComboBox.Text == "Non-available")
             {
-                bs.Filter = string.Format("[Movies Status] LIKE 'Non-available'");
+                bs.Filter = string.Format("[Movie Status] LIKE 'Non-available'");
 
             }
         }
