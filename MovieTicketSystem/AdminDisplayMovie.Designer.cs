@@ -68,7 +68,7 @@ namespace MovieTicketSystem
             // 
             // searchText
             // 
-            this.searchText.Location = new System.Drawing.Point(491, 82);
+            this.searchText.Location = new System.Drawing.Point(482, 84);
             this.searchText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchText.Name = "searchText";
             this.searchText.Size = new System.Drawing.Size(116, 22);
@@ -102,7 +102,7 @@ namespace MovieTicketSystem
             // filterLabel
             // 
             this.filterLabel.AutoSize = true;
-            this.filterLabel.Location = new System.Drawing.Point(736, 80);
+            this.filterLabel.Location = new System.Drawing.Point(736, 88);
             this.filterLabel.Name = "filterLabel";
             this.filterLabel.Size = new System.Drawing.Size(102, 17);
             this.filterLabel.TabIndex = 5;
@@ -116,7 +116,7 @@ namespace MovieTicketSystem
             "Available",
             "Non-available",
             "All"});
-            this.filterComboBox.Location = new System.Drawing.Point(844, 80);
+            this.filterComboBox.Location = new System.Drawing.Point(844, 84);
             this.filterComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.filterComboBox.Name = "filterComboBox";
             this.filterComboBox.Size = new System.Drawing.Size(151, 24);

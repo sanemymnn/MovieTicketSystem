@@ -38,7 +38,9 @@ namespace MovieTicketSystem
             dt.Columns.Add("Name", typeof(string));
             dt.Columns.Add("Start Date", typeof(string));
             dt.Columns.Add("Movie Theater", typeof(string));
-  
+            dt.Columns.Add("Capacity", typeof(string));
+            dt.Columns.Add("Movie Status", typeof(string));
+
 
 
             displayMovieDataGridView.DataSource = dt;
