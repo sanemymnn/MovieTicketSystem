@@ -72,6 +72,7 @@ namespace MovieTicketSystem
             this.PurchasedTicketsDataGridView.RowTemplate.Height = 24;
             this.PurchasedTicketsDataGridView.Size = new System.Drawing.Size(460, 172);
             this.PurchasedTicketsDataGridView.TabIndex = 3;
+
             // 
             // PurchasedTickets
             // 
@@ -85,6 +86,7 @@ namespace MovieTicketSystem
             this.Name = "PurchasedTickets";
             this.Text = "Purchased Tickets";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.PurchasedTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PurchasedTicketsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

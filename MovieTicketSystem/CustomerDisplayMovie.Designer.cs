@@ -52,8 +52,11 @@ namespace MovieTicketSystem
             // 
             // displayMovieDataGridView
             // 
+            this.displayMovieDataGridView.AllowUserToAddRows = false;
+            this.displayMovieDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.displayMovieDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.displayMovieDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.displayMovieDataGridView.Location = new System.Drawing.Point(63, 222);
+            this.displayMovieDataGridView.Location = new System.Drawing.Point(27, 158);
             this.displayMovieDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.displayMovieDataGridView.Name = "displayMovieDataGridView";
             this.displayMovieDataGridView.RowHeadersWidth = 51;
