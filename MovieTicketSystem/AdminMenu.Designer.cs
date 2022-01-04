@@ -38,10 +38,10 @@ namespace MovieTicketSystem
             // addMovieButton
             // 
             this.addMovieButton.ForeColor = System.Drawing.Color.Chocolate;
-            this.addMovieButton.Location = new System.Drawing.Point(210, 186);
+            this.addMovieButton.Location = new System.Drawing.Point(236, 213);
             this.addMovieButton.Name = "addMovieButton";
             this.addMovieButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.addMovieButton.Size = new System.Drawing.Size(109, 41);
+            this.addMovieButton.Size = new System.Drawing.Size(122, 62);
             this.addMovieButton.TabIndex = 0;
             this.addMovieButton.Text = "Add Movie";
             this.addMovieButton.UseVisualStyleBackColor = true;
@@ -50,9 +50,9 @@ namespace MovieTicketSystem
             // addTicketButton
             // 
             this.addTicketButton.ForeColor = System.Drawing.Color.BlueViolet;
-            this.addTicketButton.Location = new System.Drawing.Point(471, 186);
+            this.addTicketButton.Location = new System.Drawing.Point(409, 213);
             this.addTicketButton.Name = "addTicketButton";
-            this.addTicketButton.Size = new System.Drawing.Size(107, 41);
+            this.addTicketButton.Size = new System.Drawing.Size(131, 62);
             this.addTicketButton.TabIndex = 1;
             this.addTicketButton.Text = "Add Ticket";
             this.addTicketButton.UseVisualStyleBackColor = true;
@@ -60,10 +60,10 @@ namespace MovieTicketSystem
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(701, 415);
+            this.button1.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.button1.Location = new System.Drawing.Point(826, 450);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(81, 36);
             this.button1.TabIndex = 2;
             this.button1.Text = "Log out ->";
             this.button1.UseVisualStyleBackColor = false;
@@ -71,11 +71,12 @@ namespace MovieTicketSystem
             // 
             // DispSearchFilterButton
             // 
-            this.DispSearchFilterButton.Location = new System.Drawing.Point(357, 288);
+            this.DispSearchFilterButton.ForeColor = System.Drawing.Color.DeepPink;
+            this.DispSearchFilterButton.Location = new System.Drawing.Point(587, 213);
             this.DispSearchFilterButton.Name = "DispSearchFilterButton";
-            this.DispSearchFilterButton.Size = new System.Drawing.Size(100, 50);
+            this.DispSearchFilterButton.Size = new System.Drawing.Size(127, 62);
             this.DispSearchFilterButton.TabIndex = 3;
-            this.DispSearchFilterButton.Text = "Display movies and tickets";
+            this.DispSearchFilterButton.Text = "Display Movies";
             this.DispSearchFilterButton.UseVisualStyleBackColor = true;
             this.DispSearchFilterButton.Click += new System.EventHandler(this.DispSearchFilterButton_Click);
             // 
@@ -83,15 +84,15 @@ namespace MovieTicketSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(952, 522);
             this.Controls.Add(this.DispSearchFilterButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.addTicketButton);
             this.Controls.Add(this.addMovieButton);
             this.Name = "AdminMenu";
-            this.Text = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menu";
             this.ResumeLayout(false);
 
         }

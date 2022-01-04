@@ -36,9 +36,10 @@ namespace MovieTicketSystem
             // 
             // PurchasedTicketsButton
             // 
-            this.PurchasedTicketsButton.Location = new System.Drawing.Point(459, 201);
+            this.PurchasedTicketsButton.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.PurchasedTicketsButton.Location = new System.Drawing.Point(524, 210);
             this.PurchasedTicketsButton.Name = "PurchasedTicketsButton";
-            this.PurchasedTicketsButton.Size = new System.Drawing.Size(102, 49);
+            this.PurchasedTicketsButton.Size = new System.Drawing.Size(143, 78);
             this.PurchasedTicketsButton.TabIndex = 0;
             this.PurchasedTicketsButton.Text = "Purchased Tickets";
             this.PurchasedTicketsButton.UseVisualStyleBackColor = false;
@@ -46,35 +47,38 @@ namespace MovieTicketSystem
             // 
             // LogoutButton
             // 
-            this.LogoutButton.Location = new System.Drawing.Point(684, 26);
+            this.LogoutButton.BackColor = System.Drawing.SystemColors.Window;
+            this.LogoutButton.Location = new System.Drawing.Point(807, 435);
             this.LogoutButton.Name = "LogoutButton";
-            this.LogoutButton.Size = new System.Drawing.Size(75, 23);
+            this.LogoutButton.Size = new System.Drawing.Size(86, 42);
             this.LogoutButton.TabIndex = 1;
             this.LogoutButton.Text = "Log out";
-            this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.UseVisualStyleBackColor = false;
             this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
-            // displayMovieTicketButton
+            // DisplayMovieTicketButton
             // 
-            this.DisplayMovieTicketButton.Location = new System.Drawing.Point(182, 201);
-            this.DisplayMovieTicketButton.Name = "displayMovieTicketButton";
-            this.DisplayMovieTicketButton.Size = new System.Drawing.Size(125, 49);
+            this.DisplayMovieTicketButton.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.DisplayMovieTicketButton.Location = new System.Drawing.Point(289, 210);
+            this.DisplayMovieTicketButton.Name = "DisplayMovieTicketButton";
+            this.DisplayMovieTicketButton.Size = new System.Drawing.Size(143, 78);
             this.DisplayMovieTicketButton.TabIndex = 2;
             this.DisplayMovieTicketButton.Text = "Display movies and buy tickets";
-            this.DisplayMovieTicketButton.UseVisualStyleBackColor = true;
+            this.DisplayMovieTicketButton.UseVisualStyleBackColor = false;
             this.DisplayMovieTicketButton.Click += new System.EventHandler(this.DisplayMovieTicketButton_Click);
             // 
             // CustomerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(952, 522);
             this.Controls.Add(this.DisplayMovieTicketButton);
             this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.PurchasedTicketsButton);
             this.Name = "CustomerMenu";
-            this.Text = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menu";
             this.ResumeLayout(false);
 
         }

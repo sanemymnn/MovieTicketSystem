@@ -37,7 +37,7 @@ namespace MovieTicketSystem
             // 
             // ticketAmountText
             // 
-            this.ticketAmountText.Location = new System.Drawing.Point(313, 96);
+            this.ticketAmountText.Location = new System.Drawing.Point(507, 159);
             this.ticketAmountText.Name = "ticketAmountText";
             this.ticketAmountText.Size = new System.Drawing.Size(148, 20);
             this.ticketAmountText.TabIndex = 0;
@@ -45,10 +45,12 @@ namespace MovieTicketSystem
             // 
             // DisplayTicketDataGridView
             // 
+            this.DisplayTicketDataGridView.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.DisplayTicketDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DisplayTicketDataGridView.Location = new System.Drawing.Point(219, 185);
+            this.DisplayTicketDataGridView.AllowUserToAddRows = false;
+            this.DisplayTicketDataGridView.Location = new System.Drawing.Point(196, 225);
             this.DisplayTicketDataGridView.Name = "DisplayTicketDataGridView";
-            this.DisplayTicketDataGridView.Size = new System.Drawing.Size(348, 181);
+            this.DisplayTicketDataGridView.Size = new System.Drawing.Size(566, 181);
             this.DisplayTicketDataGridView.TabIndex = 1;
             this.DisplayTicketDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DisplayTicketDataGridView_CellContentClick);
             // 
@@ -56,9 +58,9 @@ namespace MovieTicketSystem
             // 
             this.prevPageButton.Location = new System.Drawing.Point(34, 35);
             this.prevPageButton.Name = "prevPageButton";
-            this.prevPageButton.Size = new System.Drawing.Size(24, 23);
+            this.prevPageButton.Size = new System.Drawing.Size(37, 34);
             this.prevPageButton.TabIndex = 2;
-            this.prevPageButton.Text = "<--";
+            this.prevPageButton.Text = "<";
             this.prevPageButton.UseVisualStyleBackColor = true;
             this.prevPageButton.Click += new System.EventHandler(this.prevPageButton_Click);
             // 
@@ -66,14 +68,15 @@ namespace MovieTicketSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(952, 522);
             this.Controls.Add(this.prevPageButton);
             this.Controls.Add(this.DisplayTicketDataGridView);
             this.Controls.Add(this.ticketAmountText);
             this.Name = "CustomerDisplayTicket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ticket Info";
             this.Load += new System.EventHandler(this.DisplayTicket_Load);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.DisplayTicketDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -49,10 +49,9 @@ namespace MovieTicketSystem
             // 
             this.id.AutoSize = true;
             this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.id.Location = new System.Drawing.Point(169, 77);
-            this.id.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.id.Location = new System.Drawing.Point(263, 63);
             this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(28, 17);
+            this.id.Size = new System.Drawing.Size(24, 13);
             this.id.TabIndex = 0;
             this.id.Text = "ID:";
             // 
@@ -60,10 +59,9 @@ namespace MovieTicketSystem
             // 
             this.name.AutoSize = true;
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.name.Location = new System.Drawing.Point(169, 134);
-            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name.Location = new System.Drawing.Point(263, 109);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(54, 17);
+            this.name.Size = new System.Drawing.Size(43, 13);
             this.name.TabIndex = 1;
             this.name.Text = "Name:";
             // 
@@ -71,10 +69,9 @@ namespace MovieTicketSystem
             // 
             this.startTime.AutoSize = true;
             this.startTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.startTime.Location = new System.Drawing.Point(169, 191);
-            this.startTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.startTime.Location = new System.Drawing.Point(263, 155);
             this.startTime.Name = "startTime";
-            this.startTime.Size = new System.Drawing.Size(88, 17);
+            this.startTime.Size = new System.Drawing.Size(69, 13);
             this.startTime.TabIndex = 2;
             this.startTime.Text = "Start Time:";
             // 
@@ -82,64 +79,58 @@ namespace MovieTicketSystem
             // 
             this.movieTheater.AutoSize = true;
             this.movieTheater.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.movieTheater.Location = new System.Drawing.Point(169, 250);
-            this.movieTheater.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.movieTheater.Location = new System.Drawing.Point(263, 203);
             this.movieTheater.Name = "movieTheater";
-            this.movieTheater.Size = new System.Drawing.Size(117, 17);
+            this.movieTheater.Size = new System.Drawing.Size(93, 13);
             this.movieTheater.TabIndex = 3;
             this.movieTheater.Text = "Movie Theater:";
             // 
             // idText
             // 
-            this.idText.Location = new System.Drawing.Point(332, 77);
-            this.idText.Margin = new System.Windows.Forms.Padding(4);
+            this.idText.Location = new System.Drawing.Point(385, 63);
             this.idText.Name = "idText";
-            this.idText.Size = new System.Drawing.Size(132, 22);
+            this.idText.Size = new System.Drawing.Size(100, 20);
             this.idText.TabIndex = 4;
             // 
             // nameText
             // 
-            this.nameText.Location = new System.Drawing.Point(332, 130);
-            this.nameText.Margin = new System.Windows.Forms.Padding(4);
+            this.nameText.Location = new System.Drawing.Point(385, 106);
             this.nameText.Name = "nameText";
-            this.nameText.Size = new System.Drawing.Size(132, 22);
+            this.nameText.Size = new System.Drawing.Size(100, 20);
             this.nameText.TabIndex = 5;
             // 
             // startTimeText
             // 
-            this.startTimeText.Location = new System.Drawing.Point(332, 187);
-            this.startTimeText.Margin = new System.Windows.Forms.Padding(4);
+            this.startTimeText.Location = new System.Drawing.Point(385, 152);
             this.startTimeText.Name = "startTimeText";
-            this.startTimeText.Size = new System.Drawing.Size(132, 22);
+            this.startTimeText.Size = new System.Drawing.Size(100, 20);
             this.startTimeText.TabIndex = 6;
             // 
             // movieTheaterText
             // 
-            this.movieTheaterText.Location = new System.Drawing.Point(332, 246);
-            this.movieTheaterText.Margin = new System.Windows.Forms.Padding(4);
+            this.movieTheaterText.Location = new System.Drawing.Point(385, 200);
             this.movieTheaterText.Name = "movieTheaterText";
-            this.movieTheaterText.Size = new System.Drawing.Size(132, 22);
+            this.movieTheaterText.Size = new System.Drawing.Size(100, 20);
             this.movieTheaterText.TabIndex = 7;
             // 
             // addMovieButton
             // 
-            this.addMovieButton.Location = new System.Drawing.Point(355, 423);
-            this.addMovieButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addMovieButton.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.addMovieButton.Location = new System.Drawing.Point(402, 344);
             this.addMovieButton.Name = "addMovieButton";
-            this.addMovieButton.Size = new System.Drawing.Size(100, 28);
+            this.addMovieButton.Size = new System.Drawing.Size(83, 37);
             this.addMovieButton.TabIndex = 8;
             this.addMovieButton.Text = "Add Movie";
-            this.addMovieButton.UseVisualStyleBackColor = true;
+            this.addMovieButton.UseVisualStyleBackColor = false;
             this.addMovieButton.Click += new System.EventHandler(this.addMovieButton_Click);
             // 
             // previousPageButton
             // 
-            this.previousPageButton.Location = new System.Drawing.Point(33, 32);
-            this.previousPageButton.Margin = new System.Windows.Forms.Padding(4);
+            this.previousPageButton.Location = new System.Drawing.Point(25, 26);
             this.previousPageButton.Name = "previousPageButton";
-            this.previousPageButton.Size = new System.Drawing.Size(45, 28);
+            this.previousPageButton.Size = new System.Drawing.Size(40, 36);
             this.previousPageButton.TabIndex = 9;
-            this.previousPageButton.Text = "<--";
+            this.previousPageButton.Text = "<";
             this.previousPageButton.UseVisualStyleBackColor = true;
             this.previousPageButton.Click += new System.EventHandler(this.previousPageButton_Click);
             // 
@@ -147,10 +138,9 @@ namespace MovieTicketSystem
             // 
             this.movieCapacityLabel.AutoSize = true;
             this.movieCapacityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.movieCapacityLabel.Location = new System.Drawing.Point(169, 310);
-            this.movieCapacityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.movieCapacityLabel.Location = new System.Drawing.Point(263, 252);
             this.movieCapacityLabel.Name = "movieCapacityLabel";
-            this.movieCapacityLabel.Size = new System.Drawing.Size(122, 17);
+            this.movieCapacityLabel.Size = new System.Drawing.Size(98, 13);
             this.movieCapacityLabel.TabIndex = 10;
             this.movieCapacityLabel.Text = "Movie Capacity:";
             // 
@@ -158,19 +148,17 @@ namespace MovieTicketSystem
             // 
             this.movieStatusLabel.AutoSize = true;
             this.movieStatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.movieStatusLabel.Location = new System.Drawing.Point(169, 374);
-            this.movieStatusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.movieStatusLabel.Location = new System.Drawing.Point(263, 304);
             this.movieStatusLabel.Name = "movieStatusLabel";
-            this.movieStatusLabel.Size = new System.Drawing.Size(106, 17);
+            this.movieStatusLabel.Size = new System.Drawing.Size(85, 13);
             this.movieStatusLabel.TabIndex = 11;
             this.movieStatusLabel.Text = "Movie Status:";
             // 
             // capacityText
             // 
-            this.capacityText.Location = new System.Drawing.Point(332, 310);
-            this.capacityText.Margin = new System.Windows.Forms.Padding(4);
+            this.capacityText.Location = new System.Drawing.Point(385, 252);
             this.capacityText.Name = "capacityText";
-            this.capacityText.Size = new System.Drawing.Size(132, 22);
+            this.capacityText.Size = new System.Drawing.Size(100, 20);
             this.capacityText.TabIndex = 12;
             // 
             // statusComboBox
@@ -180,17 +168,18 @@ namespace MovieTicketSystem
             this.statusComboBox.Items.AddRange(new object[] {
             "Available",
             "Non-available"});
-            this.statusComboBox.Location = new System.Drawing.Point(331, 372);
-            this.statusComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.statusComboBox.Location = new System.Drawing.Point(384, 302);
+            this.statusComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.statusComboBox.Name = "statusComboBox";
-            this.statusComboBox.Size = new System.Drawing.Size(133, 24);
+            this.statusComboBox.Size = new System.Drawing.Size(101, 21);
             this.statusComboBox.TabIndex = 15;
             // 
             // AddMovie
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.statusComboBox);
             this.Controls.Add(this.capacityText);
             this.Controls.Add(this.movieStatusLabel);
@@ -205,10 +194,9 @@ namespace MovieTicketSystem
             this.Controls.Add(this.startTime);
             this.Controls.Add(this.name);
             this.Controls.Add(this.id);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddMovie";
-            this.Text = "Add Movie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Add Movie";
             this.ResumeLayout(false);
             this.PerformLayout();
 

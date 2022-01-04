@@ -118,6 +118,7 @@ namespace MovieTicketSystem
             // Opens admin ticket form to show all ticket infos which belongs to chosen movie id
             if (e.ColumnIndex == 7)
             {
+                int numberRow = Convert.ToInt32(e.RowIndex);
 
                 var valueIndex = string.Format("{0}", MovieDataGridView.Rows[indexRow].Cells[1].Value);
 
