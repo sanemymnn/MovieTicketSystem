@@ -25,7 +25,7 @@ namespace MovieTicketSystem
         {
             PurchasedTicketsDataGridView.DataSource = dt;
 
-            dt.Columns.Add("Ticket ID", typeof(string));
+            dt.Columns.Add("Ticket Number", typeof(string));
             dt.Columns.Add("Movie ID", typeof(string));
             dt.Columns.Add("Ticket Status", typeof(string));
             dt.Columns.Add("Ticket Price", typeof(string));

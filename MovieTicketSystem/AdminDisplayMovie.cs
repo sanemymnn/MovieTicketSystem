@@ -44,6 +44,7 @@ namespace MovieTicketSystem
             buttonColumn2.Text = "Remove";
             buttonColumn2.UseColumnTextForButtonValue = true;
             MovieDataGridView.Columns.Add(buttonColumn2);
+            MovieDataGridView.DataSource = dt;
 
             dt.Columns.Add("ID", typeof(string));
             dt.Columns.Add("Name", typeof(string));
@@ -52,7 +53,7 @@ namespace MovieTicketSystem
             dt.Columns.Add("Capacity", typeof(string));
             dt.Columns.Add("Movie Status", typeof(string));
 
-            MovieDataGridView.DataSource = dt;
+          
 
             string[] lines = File.ReadAllLines("D:\\Movies.txt");
             string[] values;
