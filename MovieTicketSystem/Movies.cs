@@ -16,8 +16,6 @@ namespace MovieTicketSystem
         private string status;
         
 
-        
-
         public string Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
         public string StartTime { get => startTime; set => startTime = value; }

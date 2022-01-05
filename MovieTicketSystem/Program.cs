@@ -8,10 +8,7 @@ namespace MovieTicketSystem
 {
     static class Program
     {
-        /// <summary>
-
-        /// </summary>
-        [STAThread]
+       
         static void Main()
         {
             Application.EnableVisualStyles();
